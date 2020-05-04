@@ -68,6 +68,7 @@ export const HeaderUi = styled(Container)`
           padding: 24px 16px;
           transition: all 0.3s;
           text-decoration: none;
+          position: relative;
 
           span {
             color: #545454;
@@ -78,6 +79,17 @@ export const HeaderUi = styled(Container)`
 
           svg {
             color: #acacac;
+          }
+
+          small {
+            position: absolute;
+            right: 4px;
+            top: 20px;
+            font-size: 10px;
+            background-color: #ffb135;
+            border-radius: 15px;
+            padding: 4px 8px;
+            color: #fff;
           }
 
           &:hover {

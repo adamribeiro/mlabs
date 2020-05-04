@@ -51,6 +51,7 @@ const Header = () => {
                   <a href="link">
                     <FaRegCalendarPlus size={32} />
                     <span>AGENDAR POST</span>
+                    <small>NOVO</small>
                   </a>
                 </li>
                 <li>

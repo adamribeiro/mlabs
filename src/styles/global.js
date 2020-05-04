@@ -1,5 +1,9 @@
 import { createGlobalStyle } from 'styled-components';
 
+export const colors = {
+  gray: '#ccc',
+};
+
 export default createGlobalStyle`
     * {
         padding: 0px;
