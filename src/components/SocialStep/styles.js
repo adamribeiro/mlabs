@@ -118,7 +118,21 @@ export const SocialStepUi = styled.li`
     width: 100%;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
+
+    .icon-selected {
+      width: 100%;
+      color: #fff;
+      display: flex;
+      margin-bottom: 50px;
+      padding: 5px 10px;
+
+      svg {
+        width: 50px;
+        height: 50px;
+      }
+    }
   }
 
   .circle {

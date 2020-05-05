@@ -58,50 +58,50 @@ const Header = () => {
               <ul>
                 <li className="active">
                   <a href="41">
-                    <AiOutlineDashboard size={32} />
+                    <AiOutlineDashboard />
                     <span>DASHBOARD</span>
                   </a>
                 </li>
                 <li>
                   <a href="41">
-                    <FaRegCalendarPlus size={32} />
+                    <FaRegCalendarPlus />
                     <span>AGENDAR POST</span>
                     <small>NOVO</small>
                   </a>
                 </li>
                 <li>
                   <a href="41">
-                    <FaRegCalendarAlt size={32} />
+                    <FaRegCalendarAlt />
                     <span>CALENDÁRIO</span>
                   </a>
                 </li>
                 <li>
                   <a href="41">
-                    <FaInbox size={32} />
+                    <FaInbox />
                     <span>INBOX</span>
                   </a>
                 </li>
                 <li>
                   <a href="41">
-                    <FaRegNewspaper size={32} />
+                    <FaRegNewspaper />
                     <span>FEED</span>
                   </a>
                 </li>
                 <li>
                   <a href="41">
-                    <FaNetworkWired size={32} />
+                    <FaNetworkWired />
                     <span>WORKFLOW</span>
                   </a>
                 </li>
                 <li>
                   <a href="41">
-                    <MdShowChart size={32} />
+                    <MdShowChart />
                     <span>ACOMPANHAMENTO</span>
                   </a>
                 </li>
                 <li>
                   <a href="41">
-                    <AiFillPieChart size={32} />
+                    <AiFillPieChart />
                     <span>RELATÓRIOS</span>
                   </a>
                 </li>

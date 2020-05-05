@@ -32,7 +32,8 @@ const SocialStep = ({
         <>
           <h3>{social.name}</h3>
           <div className="botao-renovar">
-            <button onClick={() => setSocial(null)}>Renovar</button>
+            <div className="icon-selected">{icon}</div>
+            <button onClick={() => setSocial(null)}>Remover</button>
           </div>
         </>
       ) : (

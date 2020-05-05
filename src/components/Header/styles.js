@@ -48,10 +48,6 @@ export const HeaderUi = styled(Container)`
   border-bottom: 2px solid #d1d2d2;
   padding: 0px 78px;
 
-  img {
-    width: 100%;
-  }
-
   .menu-opcao-responsivo {
     display: none;
     width: 100%;
@@ -87,6 +83,7 @@ export const HeaderUi = styled(Container)`
 
     .menu-opcao-responsivo {
       display: flex;
+      justify-content: center;
     }
   }
 
@@ -102,7 +99,8 @@ export const HeaderUi = styled(Container)`
     }
 
     .menu-opcao-responsivo {
-      display: block;
+      display: flex;
+      justify-content: center;
     }
   }
 
@@ -115,7 +113,7 @@ export const HeaderUi = styled(Container)`
 
     .menu-opcao-responsivo {
       display: flex;
-      justify-content: flex-end;
+      justify-content: center;
     }
   }
 
@@ -142,8 +140,8 @@ export const HeaderUi = styled(Container)`
 
           span {
             color: #545454;
-            font-size: 15px;
-            font-weight: 400;
+            font-size: 18px;
+            font-weight: 500;
             margin-top: 12px;
           }
 
@@ -220,7 +218,7 @@ export const HeaderUi = styled(Container)`
         }
 
         li a span {
-          font-size: 12px;
+          font-size: 13px;
         }
       }
     }
@@ -228,12 +226,12 @@ export const HeaderUi = styled(Container)`
     @media (min-width: 1201px) and (max-width: 1400px) {
       ul {
         li a svg {
-          width: 18px;
-          height: 18px;
+          width: 30px;
+          height: 30px;
         }
 
         li a span {
-          font-size: 12px;
+          font-size: 13px;
         }
       }
     }
