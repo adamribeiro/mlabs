@@ -159,7 +159,6 @@ export const HeaderUi = styled(Container)`
             padding: 4px 8px;
             color: #fff;
           }
-
           &:hover {
             background-color: #eef0f0;
           }
