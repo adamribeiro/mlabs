@@ -1,91 +1,106 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { RiArrowDownSLine } from 'react-icons/ri';
-import { BsFillGearFill, BsFillInboxFill } from 'react-icons/bs';
-import { AiOutlineDashboard, AiFillPieChart } from 'react-icons/ai';
+import { BsFillGearFill } from 'react-icons/bs';
+import {
+  AiOutlineDashboard,
+  AiFillPieChart,
+  AiOutlineMenu,
+} from 'react-icons/ai';
+import { MdShowChart } from 'react-icons/md';
 import {
   FaRegCalendarPlus,
   FaRegCalendarAlt,
-  FaNetworkWired,
+  FaInbox,
   FaRegNewspaper,
+  FaNetworkWired,
 } from 'react-icons/fa';
-import { MdShowChart } from 'react-icons/md';
-import { Col, Row } from 'react-bootstrap';
+
+import { Row, Col } from 'react-bootstrap';
+
 import { TopHeader, HeaderUi } from './styles';
-import logomlabs from '../../assets/logo.svg';
+
+import logoMlabs from '../../assets/logo.svg';
 
 const Header = () => {
+  const [openMenuResp, setOpenMenuResp] = useState(false);
   return (
     <>
       <TopHeader fluid>
         <Row className="align-items-center">
           <Col className="clock">
-            <h4>30/04/2020 21:00</h4>
+            <h4>23/09/2019 10:19:56</h4>
           </Col>
           <Col className="account">
             <div>
-              <span>Minha conta</span>
-              <RiArrowDownSLine size={20} />
+              <span>Minha Conta</span>
+              <RiArrowDownSLine size={24} />
             </div>
           </Col>
-          <Col className="settings">
+          <Col className="setting">
             <BsFillGearFill size={20} />
           </Col>
         </Row>
       </TopHeader>
       <HeaderUi fluid>
         <Row className="align-items-center">
-          <Col xs={12} sm={12} lg={4} xl={2}>
-            <img src={logomlabs} />
+          <Col xs={12} sm={12} lg={3} xl={2} className="imagem-style">
+            <img src={logoMlabs} alt="Logo MLABS" />
           </Col>
-          <Col xs={12} sm={12} lg={8} xl={10}>
-            <div className="options">
+          <Col xs={12} sm={12} lg={9} xl={10}>
+            <div className="menu-opcao-responsivo">
+              <button onClick={() => setOpenMenuResp(!openMenuResp)}>
+                <AiOutlineMenu size={24} />
+                <span>Menu</span>
+              </button>
+            </div>
+            <div className={openMenuResp ? `opcoes open-opcoes` : 'opcoes'}>
               <ul>
                 <li className="active">
-                  <a href="link">
+                  <a href="41">
                     <AiOutlineDashboard size={32} />
                     <span>DASHBOARD</span>
                   </a>
                 </li>
                 <li>
-                  <a href="link">
+                  <a href="41">
                     <FaRegCalendarPlus size={32} />
                     <span>AGENDAR POST</span>
                     <small>NOVO</small>
                   </a>
                 </li>
                 <li>
-                  <a href="link">
+                  <a href="41">
                     <FaRegCalendarAlt size={32} />
                     <span>CALENDÁRIO</span>
                   </a>
                 </li>
                 <li>
-                  <a href="link">
-                    <BsFillInboxFill size={32} />
+                  <a href="41">
+                    <FaInbox size={32} />
                     <span>INBOX</span>
                   </a>
                 </li>
                 <li>
-                  <a href="link">
+                  <a href="41">
                     <FaRegNewspaper size={32} />
                     <span>FEED</span>
                   </a>
                 </li>
                 <li>
-                  <a href="link">
+                  <a href="41">
                     <FaNetworkWired size={32} />
                     <span>WORKFLOW</span>
                   </a>
                 </li>
                 <li>
-                  <a href="link">
+                  <a href="41">
                     <MdShowChart size={32} />
                     <span>ACOMPANHAMENTO</span>
                   </a>
                 </li>
                 <li>
-                  <a href="link">
+                  <a href="41">
                     <AiFillPieChart size={32} />
                     <span>RELATÓRIOS</span>
                   </a>
